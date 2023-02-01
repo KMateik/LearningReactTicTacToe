@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
 function Square({value}) {
   return <button className='square'>{value}</button>;
@@ -6,7 +6,7 @@ function Square({value}) {
 
 export default function Board() {
   return(
-    <Fragment>
+    <>
       <div className='board-row'>
         <Square value='1' />
         <Square value='2' />
@@ -22,6 +22,6 @@ export default function Board() {
         <Square value='8' />
         <Square value='9' />
       </div>
-    </Fragment>
+    </>
   );
 }
